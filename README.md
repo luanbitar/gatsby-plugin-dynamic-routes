@@ -141,6 +141,22 @@ project/
 
 If you want to put in root of your project, simply put the name of your file
 
+## Ignoring gatsby default page creator
+
+By default, gatsby generates one route to each file inside `pages/` folder, to disable this feature, put in you `gatsby-config.js`:
+
+```js
+{
+  resolve: `gatsby-plugin-page-creator`,
+  options: {
+    path: `${__dirname}/src/pages`,
+    ignore: {
+      patterns: [`**/*`],
+    },
+  },
+},
+```
+
 ## Recommended plugins
 
 Check out the [Dynamic Environment Variables][1] plugin that provides you to load different files based on your env variables
