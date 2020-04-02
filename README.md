@@ -100,6 +100,20 @@ function Example() {
 }
 ```
 
+Note that you need to put `eslint globals comment` in each file that will use `ROUTES` global variable.
+
+You need to create an empty `.eslintrc` in root of your folder to remove this comments.
+
+If you are using eslint in your project, just update this key to your config:
+
+```javascript
+{
+  "rules": {
+    "no-undef": "off"
+  }
+}
+```
+
 You can pass more than `path` or `component` keys, these keys will be available in your component later
 
 ## Variations
