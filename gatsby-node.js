@@ -45,7 +45,8 @@ exports.createPages = ({ actions, reporter }, { routeFilePath }) => {
     reporter.info(`Creating route: ${route.path}`)
     createPage({
       path: route.path,
-      component: path.resolve(route.component)
+      component: path.resolve(route.component),
+      context: route.context ? route.context : {},
     })
   })
   activity.end()
