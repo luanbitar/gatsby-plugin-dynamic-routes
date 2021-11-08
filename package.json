@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-dynamic-routes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creating dynamic routes based on your environment and/or renaming existing routes",
   "main": "index.js",
   "repository": "git@github.com:luanbitar/gatsby-plugin-dynamic-routes.git",
